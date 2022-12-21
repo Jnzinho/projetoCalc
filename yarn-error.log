@@ -1,0 +1,91 @@
+Arguments: 
+  /var/lib/snapd/snap/node/6905/bin/node /var/lib/snapd/snap/node/6905/bin/yarn.js add -D eslint eslint-config-airbnb-base eslint-config-prettier eslint-plugin-import eslint-plugin-prettier prettier
+
+PATH: 
+  /home/jnzinho/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@gamatec%2feslint-config-gamatec-base: Not found
+      at params.callback [as _callback] (/var/lib/snapd/snap/node/6905/lib/cli.js:66145:18)
+      at self.callback (/var/lib/snapd/snap/node/6905/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/var/lib/snapd/snap/node/6905/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/var/lib/snapd/snap/node/6905/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "@gamatec/g-utils",
+    "version": "1.6.12",
+    "main": "./dist/index.js",
+    "license": "MIT",
+    "ntl": {
+      "descriptions": {
+        "test": "Executa o pretest e os testes com o mocha",
+        "eslint": "Roda o linter (Eslint) no projeto",
+        "build": "Faz o build para a pasta dist"
+      }
+    },
+    "scripts": {
+      "menu": "./node_modules/.bin/ntl -d --exclude menu menu-* pretest prepublish",
+      "menu-dev": "NODE_ENV=development yarn run menu",
+      "menu-test": "NODE_ENV=test yarn run menu",
+      "menu-prod": "NODE_ENV=production yarn run menu",
+      "test": "NODE_ENV=test ./node_modules/.bin/mocha --require @babel/register src/test --recursive",
+      "eslint": "./node_modules/.bin/eslint --fix . --ignore-path .gitignore",
+      "build": "./node_modules/.bin/babel ./src --out-dir dist --ignore src/test",
+      "prepublish": "yarn run build"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.5.5",
+      "@babel/core": "^7.5.5",
+      "@babel/plugin-transform-runtime": "^7.5.5",
+      "@babel/preset-env": "^7.5.5",
+      "@babel/register": "^7.5.5",
+      "@gamatec/eslint-config-gamatec-base": "^1.0.6",
+      "chai": "^4.2.0",
+      "chai-subset": "^1.6.0",
+      "eslint": "^6.1.0",
+      "eslint-plugin-import": "^2.18.2",
+      "eslint-plugin-simple-import-sort": "^4.0.0",
+      "eslint-plugin-unicorn": "^9.1.1",
+      "mocha": "^6.2.0",
+      "ntl": "^3.2.4"
+    },
+    "dependencies": {
+      "@babel/runtime": "^7.5.5",
+      "axios": "^0.27.2",
+      "date-holidays": "^3.16.2",
+      "lodash": "^4.17.15"
+    },
+    "files": [
+      "dist/percentage",
+      "dist/query",
+      "dist/array",
+      "dist/graphql",
+      "dist/string",
+      "dist/format",
+      "dist/parse",
+      "dist/date",
+      "dist/index.js"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
