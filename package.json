@@ -1,7 +1,7 @@
 {
-  "name": "projectcalc",
-  "version": "1.6.12",
-  "main": "./dist/index.js",
+  "name": "@jnzinho/projectcalc",
+  "version": "1.6.13",
+  "main": "./dist/calc/index.js",
   "license": "MIT",
   "ntl": {
     "descriptions": {
