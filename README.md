@@ -1,6 +1,6 @@
 # Script Calculadora
 
-Utiliza a API Math.JS, aceita um número qualquer de argumentos, usando o parametro REST (...), e retorna de forma asincrona o valor solicitado.
+Utiliza a API Math.JS, aceita um número qualquer de argumentos, usando o parametro REST (...), e retorna de forma assncrona o valor solicitado.
 
 <h3>Functionalities</h3>
 add(..) <br>
