@@ -26,7 +26,6 @@
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
-    "chai": "^4.2.0",
     "chai-subset": "^1.6.0",
     "eslint": "^8.30.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -35,17 +34,19 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^4.0.0",
     "eslint-plugin-unicorn": "^9.1.1",
-    "mocha": "^6.2.0",
     "ntl": "^3.2.4",
     "prettier": "^2.8.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "axios": "^0.27.2",
-    "date-holidays": "^3.16.2",
-    "lodash": "^4.17.15"
+    "chai": "^4.3.7",
+    "lodash": "^4.17.15",
+    "mocha": "^10.2.0"
   },
   "files": [
     "dist/calc"
-  ]
+  ],
+  "repository": "https://github.com/Jnzinho/projetoCalc.git",
+  "author": "Jnzinho <joaovitorjn@unochapeco.edu.brm>"
 }
